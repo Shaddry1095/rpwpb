@@ -1,0 +1,299 @@
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: rgba(6, 6, 33, 0.806);
+}
+
+
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: black;
+    width: 100%;
+    position: sticky; 
+    z-index: 300;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    
+}
+
+.logo{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;   
+    font-size: x-large; 
+    -webkit-text-fill-color:transparent;
+    -webkit-text-stroke-width: .80px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.links{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+
+}
+
+.links a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    
+}
+.links a:hover{
+    color: red;
+}
+
+.links li{
+    list-style: none;
+}
+
+.burger{
+    display: none;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+}
+
+@media screen and (max-width:1024px) {
+    .links{
+        display: flex;
+        justify-content: space-around;
+        width: 45%;
+        font-family: 'Roboto', sans-serif
+    
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+    body{
+        overflow-x: hidden;
+    }
+    .links{
+        position: fixed;
+        
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: rgb(137, 170, 253);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300%;
+        transform: translatex(100%);
+        transition: tranform 0.5s ease-in;
+    }
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-active{
+        transform: translateX(0%);
+    }
+    
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 95%;
+  position: relative;
+  margin: auto;
+  height: 10%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: transparent;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+label {
+    width:180px;
+    clear:left;
+    text-align:right;
+    padding-right:10px;
+}
+
+input, label {
+    float:left;
+}
+
+
+.reviews-input{
+    margin-top: 20px;
+}
+
+.review-top{
+    display: flex;
+    flex-direction: row;
+}
+
+.customer-stars{
+    margin-left: 10px;
+}
+
+.customer-name{
+    font-weight: bolder;
+}
+
+.contacts{
+   margin-top: 120px;
+}
+
+.contacts-text{
+    color: rgb(127, 245, 184);
+}
+
+.contacts-info{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    color: white;
+}
+
+.about-text{
+    color:rgb(127, 245, 184) ;
+
+}
+
+.about{
+    color: white;
+}
+
+img{
+    height: 500px;
+    width: 100%;
+}
+
+.name-input{
+    width: 250px;
+    background-color: rgba(6, 6, 33, 0.413);
+    border: .5px solid white;
+    
+}
+
+.comment-input{
+    width: 250px;
+    background-color: rgba(6, 6, 33, 0.413);
+    border: .5px solid white;
+    color: white;
+    
+}
+
+.review-text{
+    color: rgb(127, 245, 184);
+}
+
+label{
+    color: white;
+}
+
+button{
+    background-color: rgba(6, 6, 33, 0.413);
+    color: white;
+    cursor: pointer;
+    
+}

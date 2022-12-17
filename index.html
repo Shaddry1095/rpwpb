@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="app.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav">
+        <nav >
+            <div class="logo"><h4>Rudys Plumbing</h4></div>
+            <ul class="links">
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </div>
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      
+      <img src="commercialbuilding.jpg" style="width:100%">
+      <div class="text"><h1>Commercial Plumbing</h1></div>
+    </div>
+  
+    <div class="mySlides fade">
+      
+      <img src="newconstruction.jpg" style="width:100%">
+      <div class="text"><h1>New Construction</h1></div>
+    </div>
+  
+    <div class="mySlides fade">
+      
+      <img src="renovations.jpg" style="width:100%">
+      <div class="text"><h1>Renovations</h1></div>
+    </div>
+
+    <div class="mySlides fade">
+        
+        <img src="pipes.jpg" style="width:100%">
+        <div class="text"><h1>Repairs</h1> </div>
+      </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  
+    <div class="reviews">
+        <div class="review-text"><h1>Reviews</h1></div>
+        <div class="customer-reviews">
+            
+            <div class="customer-review">
+                <div class="review-top">
+                    <div class="customer-name"></div>
+                    <div class="customer-stars"></div>
+                </div>
+                <div class="customer-comment"></div>
+            </div>
+            
+        </div>
+        <div class="reviews-input">
+            <div class="stars">
+                <span class="fa fa-star checked" id="one-star"></span>
+                <span class="fa fa-star checked" id="two-star"></span>
+                <span class="fa fa-star checked" id="three-star"></span>
+                <span class="fa fa-star" id="four-star"></span>
+                <span class="fa fa-star" id="five-star"></span>
+            </div>
+            <div class="name">
+            <label for="name">Name:</label>
+            <input type="text" id="name" class="name-input">
+            </div>
+            <div class="comment">
+                <label for="comment">Comment:</label>
+                <input style="height: 100px; text-align: top;" type="text" id="comment-input" class="comment-input">
+            </div>
+            
+        </div>
+        <div class="review-button">
+            <button type="submit" id="review-button">Submit</button>
+        </div>
+        <div class="contacts">
+            <div class="contacts-text"><h1>Contacts</h1></div>
+            <div class="contacts-info">
+                <div class="phone">Phone: (561)201-1779</div>
+                <div class="fax">Fax: (123)456-7981</div>
+                <div class="email">Email: rudyswpb@gmail.com</div>
+            </div> 
+        </div> 
+        
+        <div class="about-section">
+            <div class="about-text"><h1>About</h1></div>
+            <div class="about"><p>Established in 2008. We offer the highest quality plumbing service throughout South Florida. We specialise in new construction, renovations, repairs, and comemercial plumbng.</p></div>
+        </div>
+    </div>
+    
+</body>
+</html>
